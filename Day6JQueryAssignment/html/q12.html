@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q12</title>
+</head>
+<body>
+<div style="height:100px;width:500px;">
+Inside div element.
+<p>Inside a p element, in the div element. <br>
+<span>Inside a span element in the p and the div element.</span>
+</p>
+</div>
+
+<p id="aa"></p>
+<script type="text/javascript" src="../JQuery/jquery-3.2.1.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("span").click(function(event){
+        event.stopPropagation();
+        document.getElementById("aa").innerHTML=document.getElementById("aa").innerHTML+"<br>"+"span is clicked.";
+    });
+    $("p").click(function(event){
+       document.getElementById("aa").innerHTML=document.getElementById("aa").innerHTML+"</br>"+"p is clicked.";
+    });
+    $("div").click(function(){
+       document.getElementById("aa").innerHTML=document.getElementById("aa").innerHTML+"<br>"+"div is clicked.";
+    });
+});
+
+
+</script>
+
+</body>
+</html>

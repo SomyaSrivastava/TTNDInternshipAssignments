@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q7</title>
+	<style type="text/css">
+	.click{
+
+	}
+	</style>
+</head>
+<body>
+
+<button id="click" class="click">Click to append click</button>
+
+<script type="text/javascript" src="../JQuery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+
+var el = $("<button>Next</button>", {
+id: "next",
+class: "click"
+});
+
+$("#click").click(function(){
+$(this).after(el);
+});
+
+
+</script>
+
+</body>
+</html>

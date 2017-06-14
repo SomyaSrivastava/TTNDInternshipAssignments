@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q14</title>
+</head>
+<body>
+<table border="1" style="margin:0 auto;">
+	<tr>
+		<td>1</td>
+		<td>12</td>
+		<td>9</td>
+	</tr>
+	<tr>
+		<td>11</td>
+		<td>2</td>
+		<td>18</td>
+	</tr>
+	<tr>
+		<td>13</td>
+		<td>1</td>
+		<td>11</td>
+	</tr>
+	
+</table>
+<script type="text/javascript" src="../JQuery/jquery-3.2.1.min.js"></script>
+
+
+<script type="text/javascript">
+
+$('tr').children().each(function(){
+  var i=$(this).html();
+  if(i>10)
+  	$(this).css('background-color','red');
+});
+
+</script>
+
+</body>
+</html>

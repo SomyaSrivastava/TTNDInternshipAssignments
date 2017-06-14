@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q8</title>
+	<style type="text/css">
+	.click{
+
+	}
+	</style>
+</head>
+<body>
+<div id="click">
+<button class="click">click</button>
+</div>
+<script type="text/javascript" src="../JQuery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+
+var el = $("<button>Next</button>").attr('class',"click");
+
+
+$(document).on("click",".click",function(){
+$(this).after(el.clone());
+});
+
+</script>
+
+</body>
+</html>

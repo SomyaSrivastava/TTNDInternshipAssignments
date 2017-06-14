@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EX1</title>
+</head>
+<body>
+<script type="text/javascript" src="../JQuery/jquery-3.2.1.min.js"></script>
+
+<button>click here to fetch data</button>
+<div></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("button").click(function(){
+	
+		$.get({url:"https://code.jquery.com/jquery-3.2.1.min.js",async:false,success:function(result){
+			
+			$("div").html(result);
+
+		}});
+	});
+
+});
+
+
+</script>
+
+</body>
+</html>

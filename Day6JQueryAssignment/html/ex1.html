@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EX1</title>
+</head>
+<body>
+<script type="text/javascript" src="../JQuery/jquery-3.2.1.min.js"></script>
+
+<button>click here</button>
+<div></div>
+	<!--span>span1
+		<span>span1.1</span>
+		<span>span1.2</span>
+		<span>span1.3</span>
+	</span>
+	<span>span2
+		<span>span2.1</span>
+		<span>span2.2</span>
+		<span>span2.3</span>
+	</span>
+	<span>span3
+		<span>span3.1</span>
+		<span>span3.2</span>
+		<span>span3.3</span>
+	</span-->
+</div>
+
+<div class="a"></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("button").click(function(){
+		//data path
+		$.get({url:"https://code.jquery.com/jquery-3.2.1.min.js",async:false,success:function(result){
+			//get result
+			$("div").html(result);
+
+		}});
+	});
+
+});
+
+
+/*jQuery("div").click(function(){
+	alert(this);
+});
+jQuery("div > span").click(function(){
+	alert(this);
+});
+
+jQuery("div span").click(function(){
+	alert(this);
+});
+
+jQuery("span:first").click(function(){
+	alert(this);
+});
+jQuery("span:last").click(function(){
+	alert(this);
+});
+jQuery("span:even").click(function(){
+	alert(this);
+});
+
+jQuery("span:odd").click(function(){
+	alert(this);
+});*/
+//var el = jQuery("<a>click me</a>").attr('href',"https://www.google.com");
+
+//jQuery("div.b").hide();
+//jQuery("div.a").append(el);
+
+</script>
+
+</body>
+</html>

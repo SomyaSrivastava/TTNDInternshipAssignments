@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Jquery</title>
+      <script src="../jquery/jquery-3.2.1.min.js"></script>
+    </head> 
+   <body>
+	  <center>
+	<table>
+	  <thead>
+	    <th>Head1</th>
+	    <th>Head2</th> 
+	    <th>Head3</th>
+	    <th>Delete</th>
+	  </thead>
+	  <tr>
+	    <td>Abc</td>
+	    <td>def</td> 
+	    <td>ghf</td>
+	    <td><button class="click">Delete</button></td>
+	  </tr>
+	  <tr>
+	    <td>abc</td>
+	    <td>def</td> 
+	    <td>gfh</td>
+	    <td><button class="click">Delete</button></td>
+	  </tr>
+	   <tr>
+	    <td>qwe</td>
+	    <td>ertt</td> 
+	    <td>saqws</td>
+	   <td><button class="click">Delete</button></td> 
+	  </tr>
+	</table>
+</center>
+   <script type="text/javascript">
+	$(document).ready(function(){
+		 $("table").on('click','.click',function(){
+		       $(this).closest('tr').remove();
+		     });
+
+		});
+   </script>
+   </body>
+</html>   
