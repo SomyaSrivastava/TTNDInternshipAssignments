@@ -1,0 +1,37 @@
+.header {
+    background-color: #fff;
+    border: 2px solid;
+    border-radius: 20px;
+}
+.header a{
+	font-size: 36px; 
+	line-height: 2;
+}
+
+.myHeight {
+    height: 200px;
+    text-align: center;
+    background-color: #00BCD4;
+    color: red;
+    margin-top: 12px;
+}
+.first{
+	color: black;
+    background-color: rgba(128, 128, 128, 0.43);
+    height: auto;
+}
+.next{
+    margin-top: 15px;
+}
+.divdesign {
+    color: red;
+    background-color: rgba(128, 128, 128, 0.43);
+    height: 100px;
+    text-align: center;
+}
+.footdesign{
+	color: red;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+}
